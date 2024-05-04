@@ -16,7 +16,8 @@ public class AuthServiceImpl implements AuthService {
 
     private final UserRepository userRepository;
 
-    @PostConstruct
+
+    /*@PostConstruct
     public void createAdminAccount() {
         User adminAccount = userRepository.findByUserRole(UserRole.ADMIN);
         if (adminAccount == null) {
@@ -30,8 +31,7 @@ public class AuthServiceImpl implements AuthService {
         }
         else
             System.out.println("Admin was already created");
-
-    }
+    }*/
 
     @Override
     public UserDto createCustomer(SignupRequest signupRequest) {
